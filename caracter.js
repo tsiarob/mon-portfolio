@@ -1,0 +1,1 @@
+const Caros = document.querySelector('.Slider')

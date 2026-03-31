@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background: black;
+        }
+        nav {
+            margin: 19px;
+        }
+        nav .todo {
+            opacity: 0;
+            color: white;
+            margin: auto;
+            padding: 30px;
+            font-size: auto;
+            border: 5px solid red;
+            box-shadow: 8px 10px 10px 0 rgb(201, 140, 8) ;
+            background: gray;
+            border-radius: 30px;
+            width: 50px;
+            height: 20px;
+            scale: 0;
+            transition: 1s cubic-bezier(.42,0,.44,1.68);
+            translate: -100%;
+        }
+        nav .todo.show{
+            opacity: 1;
+            translate: 0;
+            scale: 1;
+        }
+
+    </style>
+    <nav>
+        <div class="todo">Trans10</div>
+        <div class="todo">Trans11</div>
+        <div class="todo">Trans12</div>
+        <div class="todo">Trans13</div>
+        <div class="todo">Trans14</div>
+        <div class="todo">Trans15</div>
+        <div class="todo">Trans16</div>
+        <div class="todo">Trans17</div>
+        <div class="todo">Trans18</div>
+        <div class="todo">Trans19</div>
+        <div class="todo">Trans20</div>
+    </nav>
+    <script>
+        const observer = new IntersectionObserver((entries)=> {
+            entries.forEach((entry)=>{
+                if(entry.isIntersecting){
+                    console.log(entry.target)
+                    entry.target.classList.add("show")
+                }else{
+                    entry.target.classList.remove("show");
+                }
+            })
+        }, {})
+        const todoElements = document.querySelectorAll(".todo")
+        todoElements.forEach(el => observer.observe(el))
+    </script>
+</body>
+</html>

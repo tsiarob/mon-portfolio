@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="folio.css">
+    <title>TsiaroB</title>
+</head>
+<body>
+    <nav class=".navy">
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="close">
+            <label for="sidebar-active">
+                <ion-icon name="close-outline"></ion-icon>
+            </label>
+            <a class="home" href="#">Home</a>
+            <a class="About" href="#">About</a>
+            <a class="Skill" href="#">Skill</a>
+            <a class="Contact" href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="profil">
+            <img class="pdp" src="partner-removebg-preview.png" alt="">
+            <div class="Info">
+                <div class="detail">
+                    <div class="Name">
+                        <h4>Hi, I'm <h4 class="nom"></h4></h4>
+                    </div>
+                    <p>Passionate about software development, I work with C++, Python, and modern web technologies such as HTML, CSS, and JavaScript. I enjoy turning ideas into practical applications, solving problems through code, and creating clean, responsive digital experiences.</p>
+                    <div class="logo">
+                        <a data-social="facebook" style="--accent-color: blue;--bord: white;" href="#">
+                            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+                        </a>
+                        <a data-social="youtube" style="--accent-color: red;--bord: white;" href="#">
+                            <ion-icon class="icon" name="logo-youtube"></ion-icon>
+                        </a>
+                        <a data-social="twitter" style="--accent-color: rgb(0, 140, 255);--bord: white;" href="#">
+                            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <a href="téléchargement.jpg" class="aaa" download>Download CV</a>
+                
+            </div>
+        </div>
+        <div class="school">
+            <div class="licence">
+                <img src="téléchargement.jpg" alt="">
+                <div class="education">
+                    <h2>My Education</h2>
+
+                    <div class="education-item">
+                        <h3>Bachelor's Degree in Computer Science (L1)</h3>
+                        <p class="school">CNTEMAD</p>
+                        <p class="status">Currently Studying</p>
+
+                        <ul>
+                            <li>Fundamentals of Computer Science</li>
+                            <li>Algorithms and Data Structures</li>
+                            <li>Programming with Python and C++</li>
+                            <li>Problem Solving and Logical Thinking</li>
+                            <li>Software Development Basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="call">
+            <div class="contact">
+                <div class="collab">
+                    <h2>📬 Contact Me</h2>
+
+                    <p class="pepe">
+                        <strong>Let’s work together!</strong><br>
+                        If you have a project, an idea, or an opportunity you’d like to discuss,
+                        feel free to reach out. I’m always open to collaborations and freelance work.
+                    </p>
+                </div>
+                <div class="contact-info">
+                    
+                    <h3>📧 Email</h3>
+                    <p>avony386@email.com</p>
+
+                    <h3>📱 Phone / WhatsApp</h3>
+                    <p>+261 34 66 082 71</p>
+
+                    <h3>🌍 Location</h3>
+                    <p>Madagascar</p>
+
+                    <h3>💼 Social Links</h3>
+                    <ul class="link">
+                        <a href="https://github.com/TsiaroB"><ion-icon name="logo-github"></ion-icon><strong>GitHub:</strong></a>
+                        <a href="https://linkedin.com/in/Tsiaro-Randriamihamina"><ion-icon name="logo-linkedin"></ion-icon><strong>LinkedIn:</strong> </a>
+                        <a href="https://facebook.com/in/Tsi-Aro"><ion-icon name="logo-facebook"></ion-icon><strong>Portfolio:</strong></a>
+                    </ul>
+
+                </div>
+
+                <div class="contact-form">
+                    <h3>📝 Contact Form</h3>
+
+                    <form action="#" method="post">
+                    
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                    <div class="boutton">
+                        <button type="submit">Send Message</button>
+                    </div>
+                    
+                    </form>
+                </div>
+
+                <p>
+                    <em>Have a project in mind? So, let's do this. Let’s build something great together.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="action.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>
+</body>
+</html>

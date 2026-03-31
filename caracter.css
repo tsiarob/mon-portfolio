@@ -1,0 +1,66 @@
+body {
+    background: rgb(4, 82, 71);
+    display: grid;
+    padding: 40px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.logo a {
+    padding: 0.5em;
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 5px 10px 10px 0 blue;
+}
+.logo a ion-icon {
+    height: 32px;
+    font-size: 40px;
+}
+.logo a::before {
+    content: attr(data-social);
+    position: absolute;
+    background: #000;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    transform: translateY(-30px) rotate(25deg);
+    background-color: var(--accent-color);
+    opacity: 0;
+} 
+.logo a:hover {
+    background: var(--accent-color);
+    fill: white;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.logo a::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--accent-color);
+    transform: translateY(0px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.logo a:hover::before{
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.logo a:hover::after{
+    transform: translateY(-42px) rotate(0);
+    opacity: 1;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
