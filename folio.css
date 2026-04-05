@@ -4,6 +4,7 @@ body {
 }
 label ion-icon {
     display: none;
+    opacity: 0;
     color: rgb(255, 255, 255);
     border: none;
     padding: 0;
@@ -167,8 +168,6 @@ label {
 ion-icon {
     color: var(--accent-color);
     font-size: 60px;
-    width: 90%;
-    height: 90%;
     border: 5px solid red;
     border-radius: 100%;
     padding: 20px;
@@ -215,22 +214,19 @@ ion-icon {
 .logo a {
     border: 3px solid rgb(255, 255, 255);
     border-radius: 100%;
-    padding: 10px;
-    width: 50px;
-    height: 45px;
     display: flex;
     justify-content: center;
-    padding: auto;
     align-items: center;
     margin: 20px;
     color: aliceblue;
     background: rgb(0, 0, 0);
 }
 .logo a ion-icon {
-    width: 90%;
-    height: 90%;
+    border: none;
+    background: transparent;
+    font-size: 50px;
     color: rgb(255, 255, 255);
-    padding: 3px;
+    padding: 10px;
 }
 .logo a::before {
     content: attr(data-social);
@@ -354,13 +350,9 @@ ion-icon {
         justify-content: flex-start;
     }
     label ion-icon {
-        display: none;
-        color: rgb(255, 255, 255);
-        border: none;
-        font-size: 30px;
-    }
-    label ion-icon {
         display: block;
+        cursor: pointer;
+        opacity: 1;
         color: rgb(255, 255, 255);
         border: none;
         font-size: 30px;
@@ -448,13 +440,13 @@ ion-icon {
     height: 40%;
     text-decoration: none;
 }
-a ion-icon {
+a .con {
     color: green;
     background: white;
     transition: 400ms;
     margin: 20px;
 }
-a ion-icon:hover {
+a .con:hover {
     scale: 1.13;
     color: rgb(255, 196, 0);
     background: rgb(0, 0, 0);
